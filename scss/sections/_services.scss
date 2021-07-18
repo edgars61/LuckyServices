@@ -7,6 +7,7 @@
     &__content {
         padding: 1rem;
         margin-top: 0;
+        width: 90%;
 
         p {
             font-size: 0.8rem;
@@ -14,6 +15,9 @@
             @include media-breakpoint-up(lg) {
                 font-size: 1rem;
             }
+        }
+        [aria-expanded="false"] > .expanded,[aria-expanded="true"] > .collapsed {
+            display: none;
         }
 
         @include media-breakpoint-up(lg) {
@@ -33,4 +37,6 @@
     &__pic {
         max-width: 100%;
     }
+
+   
 }
